@@ -18,9 +18,9 @@ When there is not a symbol, the program still checks that each line has a valid 
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
-*SHORTCOMINGS:
-As of now, there's not a strong error checking for if there is an END directive. If there is an END directive and more code after, an error is not thrown, however it will not add anything to the symbol table after the END directive is encountered.  There were no examples of this happening in the 10 test.sic files we were given. 
+SHORTCOMINGS:
+* As of now, there's not a strong error checking for if there is an END directive. If there is an END directive and more code after, an error is not thrown, however it will not add anything to the symbol table after the END directive is encountered.  There were no examples of this happening in the 10 test.sic files we were given. 
 
-*I'm also not sure if I caught all of the errors in checking the parameters for the directives. I don't know what makes a character constant invalid and did not do any checks for that.
+* I'm also not sure if I caught all of the errors in checking the parameters for the directives. I don't know what makes a character constant invalid and did not do any checks for that.
 
-*I also noticed in test7.sic (the one with empty lines) that in my VScode on Windows said that the empty line line[0] = 10, which is Line Feed, but on the Linux server line[0] = 13, which is Carriage Return. I accounted for both but I don't know if there's more I should look out for here.
+* I also noticed in test7.sic (the one with empty lines) that in my VScode on Windows said that the empty line line[0] = 10, which is Line Feed, but on the Linux server line[0] = 13, which is Carriage Return. I accounted for both but I don't know if there's more I should look out for here.
