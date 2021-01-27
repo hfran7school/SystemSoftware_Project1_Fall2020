@@ -7,7 +7,7 @@ I did not upload all 10 test.sic files we were given since I do not own them, ho
 
 The following is the documentation I turned in to my professor upon completion of the project. 
 
-# Hailey Francis (n01402670) Project 1 Documentation
+# Hailey Francis Project 1 Documentation
 My symbol and opcode tables are declared outside of my main function so that my all of my functions, including my main, can reference it. I used seperate chaining with linked lists to add the symbols to the table hashing with the alphabet method, using the examples used in the past few lectures, including the Friday meeting on 9/11/20.
 
 Errors are thrown if there are duplicate symbols, invalid bytes when declaring a byte word constant, labels with directive names, going above the SIC memory limit at address 8000(hex), when a word constant is bigger than 24 bits (signed with 2's complement), and ignores comment lines entirely. It will also throw an error if a symbol name is too large or if a symbol has an invalid character and if there's a duplicate START symbol. Overall, it catches all the errors in the test.sic files provided, as well as some others.
